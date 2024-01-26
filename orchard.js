@@ -152,11 +152,13 @@ console.log(days)
 
 // CODE HERE
 
-let fujiTons = []
-let galaTons = []
-let pinkTons = []
+let fujiTons = [13,19.5,19.5,13,13,13,6.5]
+let galaTons = [32.5,13,26,19.5,39,13,26]
+let pinkTons = [6.5,32.5,26,13,6.5,32.5,26]
 
-for *
+for (let c = 0; c<fujiTons.length; c++) {
+    console.log("fujiTons day:", c, "-", fujiTons[c], "galaTons day:",c, "-", galaTons[c], "pinkTons day:", c, "-", pinkTons[c])
+}
 
 
 
@@ -179,12 +181,17 @@ for *
 */
 
 // CODE HERE 
-
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
-
-
+let fujiPounds = 0
+let galaPounds = 0
+let pinkPounds = 0
+for(let d = 0; d<fujiTons.length; d++) {
+fujiPounds += fujiTons[d] *2000
+galaPounds += galaTons[d]*2000
+pinkPounds += pinkTons[d]*2000
+}
+console.log("Total number of fuji pounds is:", fujiPounds)
+console.log("Total number of gala pounds is:", galaPounds)
+console.log("Total number of pink pounds is:", pinkPounds)
 
 
 
@@ -207,14 +214,17 @@ for *
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = 0 
+let galaProfit = 0
+let pinkProfit = 0
 
+fujiProfit = .89*fujiPounds
+galaProfit = .64*galaPounds
+pinkProfit = .55*pinkPounds
 
-
-
-
+console.log("Fuji profits are:", fujiProfit)
+console.log("Gala profits are:", galaProfit)
+console.log("Pink profits are:", pinkProfit)
 
 // PROBLEM 7
 
@@ -227,3 +237,5 @@ for *
 */
 
 // CODE HERE
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+console.log("Total profit is:", totalProfit)
